@@ -26,109 +26,136 @@
   <!-- ================================================================================================================= -->
 
   <body>
-    <div class="m-5 p-5 text-center text-white rounded jumbo-colour">
+    <div class="m-3 p-3 text-center text-white rounded jumbo-colour">
       <div class = "container">
-        <h1 class="display-4">Welcome to<br />Super Team</h1>
+        <h1 class="display-4">
+          <i class="d-inline-block icon-SVG_team_icon1" style="font-size: 6rem;"></i>
+          <div class="d-inline-block">Welcome to<br />Super Team</div>
+        </h1>
       </div>
     </div>
 
     <div class="container">
       <div class="row">
-          <div class="team-organisation">
+        <div class="team-organisation">
 
-            <hr />
-              <div class="manager fw-bold mb-2" style="min-height: 10rem;">
-                Manager:
+          <hr />
+          <div class="manager fw-bold mb-2" style="min-height: 10rem;">
 
-                <div class="card employee-card col-3 mt-3">
-                  <div class="card-header">
-                      <h2 class="card-title">{{ name }}</h2>
-                      <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>{{ role }}</h3>
+            <div class="card manager-card shadow mb-3 bg-body rounded col align-self-center col-sm-6 col-md-4 col-10 mt-3 me-3">
+              <div class="card-header">
+                <i class="d-inline-block icon-SVG_manager-icon" style="font-size: 3.75rem;"></i>
+                  <div class="d-inline-block  ms-3">
+                    <h2 class="card-title">{{ name }}</h2>
+                    <h4 class="card-title"><i class="mr-2"></i>manager</h4>
                   </div>
-                  <div class="card-body">
-                      <ul class="list-group">
-                          <li class="list-group-item">ID: {{ id }}</li>
-                          <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
-                          <li class="list-group-item">Office: {{ officeNumber }}</li>
-                      </ul>
-                  </div>
+              </div>
+              <div class="card-body">
+                  <ul class="list-group">
+                      <li class="list-group-item">ID: {{ id }}</li>
+                      <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
+                      <li class="list-group-item">Office: {{ officeNumber }}</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          <div class="engineer fw-bold mb-2" style="min-height: 10rem;">
+
+            <div class="card engineer-card shadow mb-3 bg-body rounded d-inline-block col-sm-6 col-md-4 col-10 mt-3 me-3">
+              <div class="card-header">
+                <i class="d-inline-block icon-SVG_engineer-icon" style="font-size: 3.5rem;"></i>
+                <div class="d-inline-block  ms-3">
+                  <h2 class="card-title">{{ name }}</h2>
+                  <h3 class="card-title"><i class="mr-2"></i>engineer</h3>
                 </div>
               </div>
-
-              <hr />
-                <div class="engineer fw-bold mb-2" style="min-height: 10rem;">
-                  Engineers:
-                  <div class="card employee-card col-3 mt-3">
-                    <div class="card-header">
-                        <h2 class="card-title">{{ name }}</h2>
-                        <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>{{ role }}</h3>
-                    </div>
-                    <div class="card-body">
-                        <ul class="list-group">
-                            <li class="list-group-item">ID: {{ id }}</li>
-                            <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
-                            <li class="list-group-item">GitHub: <a href="https://github.com/{{ github }}" target="_blank" rel="noopener noreferrer">{{ github }}</a></li>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
-                <hr />
-
-                <div class="intern fw-bold mb-2" style="min-height: 10rem;">
-                  <div>Interns:</div>
-
-                  <div class="card employee-card d-inline-block col-3 mt-3">
-                    <div class="card-header">
-                        <h2 class="card-title">{{ name }}</h2>
-                        <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>{{ role }}</h3>
-                    </div>
-                    <div class="card-body">
-                        <ul class="list-group">
-                            <li class="list-group-item">ID: {{ id }}</li>
-                            <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
-                            <li class="list-group-item">School: {{ school }}</li>
-                        </ul>
-                    </div>
-                  </div>
-
-                  <div class="card employee-card d-inline-block col-3 mt-3">
-                    <div class="card-header">
-                        <h2 class="card-title">{{ name }}</h2>
-                        <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>{{ role }}</h3>
-                    </div>
-                    <div class="card-body">
-                        <ul class="list-group">
-                            <li class="list-group-item">ID: {{ id }}</li>
-                            <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
-                            <li class="list-group-item">School: {{ school }}</li>
-                        </ul>
-                    </div>
-                  </div>
-
-                  <div class="card employee-card d-inline-block col-3 mt-3">
-                    <div class="card-header">
-                        <h2 class="card-title">{{ name }}</h2>
-                        <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>{{ role }}</h3>
-                    </div>
-                    <div class="card-body">
-                        <ul class="list-group">
-                            <li class="list-group-item">ID: {{ id }}</li>
-                            <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
-                            <li class="list-group-item">School: {{ school }}</li>
-                        </ul>
-                    </div>
-                  </div>
-
-                </div>
-                <hr />
-
+              <div class="card-body">
+                  <ul class="list-group">
+                      <li class="list-group-item">ID: {{ id }}</li>
+                      <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
+                      <li class="list-group-item">GitHub: <a href="https://github.com/{{ github }}" target="_blank" rel="noopener noreferrer">{{ github }}</a></li>
+                  </ul>
+              </div>
             </div>
 
-
+            <div class="card engineer-card shadow mb-3 bg-body rounded d-inline-block col-sm-6 col-md-4 col-10 mt-3 me-3">
+              <div class="card-header">
+                <i class="d-inline-block icon-SVG_engineer-icon" style="font-size: 3.5rem;"></i>
+                <div class="d-inline-block  ms-3">
+                  <h2 class="card-title">{{ name }}</h2>
+                  <h3 class="card-title"><i class="mr-2"></i>engineer</h3>
+                </div>
+              </div>
+              <div class="card-body">
+                  <ul class="list-group">
+                      <li class="list-group-item">ID: {{ id }}</li>
+                      <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
+                      <li class="list-group-item">GitHub: <a href="https://github.com/{{ github }}" target="_blank" rel="noopener noreferrer">{{ github }}</a></li>
+                  </ul>
+              </div>
+            </div>
           </div>
+
+          <hr />
+          <div class="intern fw-bold mb-2" style="min-height: 10rem;">
+
+            <div class="card intern-card shadow mb-3 bg-body rounded d-inline-block col-sm-6 col-md-4 col-10 mt-3 me-3">
+              <div class="card-header">
+                <i class="d-inline-block icon-SVG_intern-icon" style="font-size: 3.25rem;"></i>
+                <div class="d-inline-block  ms-3">
+                  <h2 class="card-title">{{ name }}</h2>
+                  <h3 class="card-title"><i class="mr-2"></i>intern</h3>
+                </div>
+              </div>
+              <div class="card-body">
+                  <ul class="list-group">
+                      <li class="list-group-item">ID: {{ id }}</li>
+                      <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
+                      <li class="list-group-item">School: {{ school }}</li>
+                  </ul>
+              </div>
+            </div>
+
+            <div class="card intern-card shadow mb-3 bg-body rounded d-inline-block col-sm-6 col-md-4 col-10 mt-3 me-3">
+              <div class="card-header">
+                <i class="d-inline-block icon-SVG_intern-icon" style="font-size: 3.25rem;"></i>
+                <div class="d-inline-block  ms-3">
+                  <h2 class="card-title">{{ name }}</h2>
+                  <h3 class="card-title"><i class="mr-2"></i>intern</h3>
+                </div>
+              </div>
+              <div class="card-body">
+                  <ul class="list-group">
+                      <li class="list-group-item">ID: {{ id }}</li>
+                      <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
+                      <li class="list-group-item">School: {{ school }}</li>
+                  </ul>
+              </div>
+            </div>
+
+            <div class="card intern-card shadow mb-3 bg-body rounded d-inline-block col-sm-6 col-md-4 col-10 mt-3 me-3">
+              <div class="card-header">
+                <i class="d-inline-block icon-SVG_intern-icon" style="font-size: 3.25rem;"></i>
+                <div class="d-inline-block ms-3">
+                  <h2 class="card-title">{{ name }}</h2>
+                  <h3 class="card-title"><i class="mr-2"></i>intern</h3>
+                </div>
+              </div>
+              <div class="card-body">
+                  <ul class="list-group">
+                      <li class="list-group-item">ID: {{ id }}</li>
+                      <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
+                      <li class="list-group-item">School: {{ school }}</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          <hr />
+        </div>
       </div>
     </div>
-
   </body>
 </html>
 

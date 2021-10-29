@@ -10,7 +10,7 @@
       
     --bright-blue: rgba(5, 17, 242, 1);
     --artic-blue: rgba(15, 124, 191, 1);
-    --light-blue: rgba(17, 160, 217, 1);
+    --light-blue: rgba(20, 160, 215, 1);
     --sky-blue: rgba(78, 191, 217, 1);
     --terracotta: rgba(191, 120, 94, 1);
 
@@ -386,9 +386,23 @@
  *  Bootstrap over rides
  * ================================================================================ */
 .jumbo-colour{
-  background-color: var(--sunset-sky);
+  background-color: var(--rocks-dark);
 }
 
+.manager-card > .card-header {
+  background-color: var(--artic-blue);
+  color: white;
+}
+
+.engineer-card > .card-header {
+  background-color: var(--ocean-dark);
+  color: white;
+}
+
+.intern-card > .card-header {
+  background-color: var(--sky-blue);
+  color: white;
+}
 
 /* --------------------------------------------------------------- 
  * That's all there is.
