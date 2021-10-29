@@ -137,19 +137,13 @@ memberJobTitle = () => {
 	});
 };
 
-
-
-
-initialise();
-
-
 saveToDrive = ( html, team ) => {
 
     let newDirectory = `./${team}_team_keyData/`;
 
     fs.mkdir( newDirectory, { recursive: true }, ( err ) => {
         if ( err ) throw err;
-      }); 
+    }); 
 
     fs.writeFile( newDirectory + "index.html", html, err => {
         if (err) { 
@@ -161,7 +155,13 @@ saveToDrive = ( html, team ) => {
 };
 
 
+initialise();
+
+
 /*  ========================================================================================================================
     ======================================================================================================================== */
 
-    module.exports = saveToDrive;
+    module.exports = {
+        q_manager,
+        saveToDrive,
+    };

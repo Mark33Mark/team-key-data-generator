@@ -10,10 +10,6 @@
     "test": "jest --coverage",
     "watch": "jest --watch .js"
   },
-  "jest": {
-    "collectCoverage": true,
-    "coverageReporters": ["html"]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mark33Mark/team-key-data-generator.git"
