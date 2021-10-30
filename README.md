@@ -49,7 +49,7 @@ Client requested features as implemented:
 
 - a command-line application that accepts user input about the user's application repository;
 - starting the application in the command line runs Inquirer that prompts the user to enter the team manager’s name, employee ID, email address, and office number
-- After enteringf the team's manager details another menu prompts the user with the option to add an engineer or an intern or to finish building the team
+- After entering the team's manager details another menu prompts the user with the option to add an engineer or an intern or to finish building the team
 - the user is prompted for each additional team member's names and key information
 - selecting the engineer option prompts the user to enter the engineer’s name, ID, email, and GitHub username, and then returns you to the menu
 - selecting the intern option prompts the user to enter the intern’s name, ID, email, and school, and then returns you to the menu

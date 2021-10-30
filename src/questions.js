@@ -178,7 +178,7 @@ validatePhone = phone => {
     if ( phoneFormat_land || phoneFormat_mobile ) {
             return true;
         } else {
-            console.log(`			Provide a valid phone number, for example:  for landline : 123-123-1234, 123.123.1234, 1231231234
+            console.log(`			Provide a valid phone number, for example:  for landline : 12-1234-1234, 12.1234.1234, 1212341234
 											   or for mobile : 0448-888-888, 0448888888`);
             return false;
         }
@@ -206,7 +206,7 @@ const thanks =
 "\x1b[35m\x1b[47m     | | | | | | (_| | | | |   <\\__ \\     \n\x1b[0m" + 
 "\x1b[36m\x1b[47m     \\_/ |_| |_|\\__,_|_| |_|_|\\_\\___/     \n\x1b[0m" + 
 "\x1b[36m\x1b[47m                                          \n\x1b[0m" + 
-"\x1b[36m\x1b[47m                                          \n\x1b[0m"                                           
+"\x1b[36m\x1b[47m                                          \n\x1b[0m";                                         
 
 
 
