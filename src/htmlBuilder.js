@@ -126,7 +126,7 @@ teamPage = ( workTeam, managerCard, engineerCards, internCards ) => {
             <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Lato:wght@400;700&family=Sarabun:wght@700&display=swap" 
                 rel="stylesheet" />
 
-            <!-- <link rel="shortcut icon" href="img/favicon.ico?ver=1.0" type="image/x-icon" /> -->
+            <link rel="shortcut icon" href="../dist/img/favicon.ico?ver=1.0" type="image/x-icon" />
 
             <!-- CSS
             ================================================== -->  

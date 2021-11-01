@@ -125,9 +125,12 @@ If you would like to contribute, please comply with the Contributor Covenant Cod
 ### 9. Tests
 
 - Test are written using the Jest package for Test-Driven Development.
-- Following is a screengrab of the Jest coverage report generated in HTML:
+- Installed  jest-html-reporter for test results to also go to a html file:
 
-![TDD page generated](./dist/img/code_coverage_index_html_file.jpg)
+- Following is a screengrab of the Jest coverage report generated in HTML:  
+[Link to the Jest Test Report webpage](https://github.com/Mark33Mark/team-key-data-generator/test-report.html)
+![Jest test report](./dist/img/211101_jest_test_report.jpg)
+![TDD coverage report](./dist/img/code_coverage_index_html_file.jpg)
 
 ---
 
