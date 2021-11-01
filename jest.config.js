@@ -22,4 +22,13 @@ module.exports = {
     testEnvironment: "node",
     collectCoverage: true,
     coverageReporters: ["html"],
+    reporters: [ 
+        "default",
+            [
+            "./node_modules/jest-html-reporter",
+            {
+                "pageTitle": "Test Report for the team-key-data-generator application."
+            }
+        ]
+    ]
 };
