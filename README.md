@@ -70,7 +70,7 @@ Client requested features as implemented:
 ### 3. Installation
 
 You can download the source code from [my Github repository](https://github.com/Mark33Mark/team-key-data-generator), install into a location of your choosing. Open a terminal window and navigate to the folder with the application in it.  
-You will need to install Node.js if you haven't already in your system. Once node is installed then install the dependancies by typing npm install, as follows:
+You will need to install Node.js if you haven't already in your system. Once node is installed then install the application dependancies by typing npm install, as follows:
 
 ```
 npm install
@@ -124,12 +124,12 @@ If you would like to contribute, please comply with the Contributor Covenant Cod
 
 ### 9. Tests
 
-- Test are written using the Jest package for Test-Driven Development.
+- Test have been written using the Jest package for Test-Driven Development.
 - Installed  jest-html-reporter for test results to also go to a html file:
+[Link to the Jest Test Report webpage](./test-report.html)
+![Jest test report](./dist/img/211101_jest_test_report.jpg)  
 
 - Following is a screengrab of the Jest coverage report generated in HTML:  
-[Link to the Jest Test Report webpage](https://github.com/Mark33Mark/team-key-data-generator/test-report.html)
-![Jest test report](./dist/img/211101_jest_test_report.jpg)
 ![TDD coverage report](./dist/img/code_coverage_index_html_file.jpg)
 
 ---
